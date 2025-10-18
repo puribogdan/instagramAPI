@@ -9,11 +9,11 @@ import os
 import json
 import requests
 from datetime import datetime
-from dotenv import load_dotenv
+import dotenv
 from urllib.parse import urlparse
 
 # Load environment variables from .env file
-load_dotenv()
+dotenv.load_dotenv()
 
 # Instagram credentials from .env file
 def get_instagram_credentials() -> tuple[str, str]:
